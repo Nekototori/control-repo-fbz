@@ -15,3 +15,6 @@ forge "http://forge.puppetlabs.com"
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+
+mod 'beergeek/enable_noop'
+mod 'beergeek/disable_noop'
