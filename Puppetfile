@@ -18,3 +18,8 @@ forge "http://forge.puppetlabs.com"
 
 mod 'beergeek/enable_noop'
 mod 'beergeek/disable_noop'
+
+mod 'servicenow_cmdb_data',
+  :git    => 'https://github.com/jessereynolds/puppet-servicenow_cmdb_data.git',
+  :branch => 'master'
+
