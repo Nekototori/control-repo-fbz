@@ -18,5 +18,6 @@ hierarchy:
     path: "/opt/servicenow_cmdb_data/data/servicenow_cmdb_data.json"
 
   - name: "Common data"
+    data_hash: yaml_data
     path: "common.yaml"
 
