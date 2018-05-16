@@ -13,8 +13,8 @@ hierarchy:
     path: "nodes/%{trusted.certname}.yaml"
 
   - name: "ServiceNow CMDB Data"
-    path: "/opt/servicenow_cmdb_data/data/servicenow_cmdb_data.json"
     data_hash: json_data
+    path: "/opt/servicenow_cmdb_data/data/servicenow_cmdb_data.json"
 
   - name: "Common data"
     path: "common.yaml"
