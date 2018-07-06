@@ -1,5 +1,5 @@
 # @summary esx base profile
-class profiles::esx {
+class profile::esx {
   include vcenter::package
 
   transport { 'lab':
