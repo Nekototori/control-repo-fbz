@@ -9,10 +9,15 @@ class profile::esx {
     options  => { 'insecure' => true },
   }
 
-  vc_datacenter { 'dc1':
-    path      => '/dc1',
-    ensure    => present,
-    transport => Transport['lab'],
-    require   => Transport['lab'],
+  file { '/tmp/foo':
+    ensure    => file,
+    transport => 'albatross',
   }
+
+  # vc_datacenter { 'dc1':
+  #   path      => '/dc1',
+  #   ensure    => present,
+  #   transport => Transport['lab'],
+  #   require   => Transport['lab'],
+  # }
 }
