@@ -29,7 +29,7 @@ mod 'vmware-vcenter',
 # mod 'vmware-vmware_lib', '0.7.0'
 mod 'vmware-vmware_lib',
 	:git => 'https://github.com/jessereynolds/vmware-vmware_lib.git',
-	:branch => 'environment_separation'
+	:branch => 'environment_isolation'
 mod 'nanliu-staging', '1.0.3'
 mod 'vmware-nsx', '0.1.0'
 mod 'vmware-vcsa', '0.7.0'
