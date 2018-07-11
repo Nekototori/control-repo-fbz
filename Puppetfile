@@ -26,7 +26,10 @@ mod 'servicenow_cmdb_data',
 mod 'vmware-vcenter',
 	:git => 'https://github.com/vmware/vmware-vcenter.git',
 	:tag => '0.11.1'
-mod 'vmware-vmware_lib', '0.7.0'
+# mod 'vmware-vmware_lib', '0.7.0'
+mod 'vmware-vmware_lib',
+	:git => 'https://github.com/jessereynolds/vmware-vmware_lib.git',
+	:branch => 'environment_separation'
 mod 'nanliu-staging', '1.0.3'
 mod 'vmware-nsx', '0.1.0'
 mod 'vmware-vcsa', '0.7.0'
