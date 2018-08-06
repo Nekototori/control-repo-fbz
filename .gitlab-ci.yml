@@ -1,10 +1,8 @@
 ---
 
-prepare:
-  script:
-    - bundle install
-
 syntax:
+  before_script:
+    - bundle install
   script:
     - bundle exec rake syntax
 
