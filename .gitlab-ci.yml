@@ -1,14 +1,10 @@
 ---
 
-stages:
-  - dependencies
-  - syntax
-
-dependencies_job:
+prepare:
   script:
     - bundle install
 
-syntax_job:
+syntax:
   script:
     - bundle exec rake syntax
 
