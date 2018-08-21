@@ -12,3 +12,9 @@ lint:
   script:
     - bundle exec rake lint
 
+onceover:
+  before_script:
+    - bundle install
+  script:
+    - bundle exec onceover run spec
+
