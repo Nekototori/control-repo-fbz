@@ -1,0 +1,10 @@
+---
+
+install:
+  - bundle install
+
+script:
+  - bundle exec rake syntax
+  - bundle exec rake lint
+  - bundle exec onceover run spec
+
