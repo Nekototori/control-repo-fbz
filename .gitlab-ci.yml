@@ -1,0 +1,14 @@
+---
+
+syntax:
+  before_script:
+    - bundle install
+  script:
+    - bundle exec rake syntax
+
+lint:
+  before_script:
+    - bundle install
+  script:
+    - bundle exec rake lint
+

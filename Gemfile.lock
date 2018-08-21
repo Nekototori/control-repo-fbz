@@ -23,7 +23,7 @@ GEM
       fast_gettext (~> 1.1.0)
       gettext (>= 3.0.2)
       locale
-    git (1.4.0)
+    git (1.5.0)
     hiera (3.4.3)
     json (2.1.0)
     little-plugger (1.1.4)
@@ -34,7 +34,7 @@ GEM
       multi_json (~> 1.10)
     metaclass (0.0.4)
     minitar (0.6.1)
-    mocha (1.5.0)
+    mocha (1.7.0)
       metaclass (~> 0.0.1)
     multi_json (1.13.1)
     multipart-post (2.0.0)
@@ -57,22 +57,22 @@ GEM
       table_print (>= 1.0.0)
       versionomy (>= 0.5.0)
     parallel (1.12.1)
-    parallel_tests (2.21.3)
+    parallel_tests (2.22.0)
       parallel
-    puppet (5.5.2)
+    puppet (5.5.3)
       facter (> 2.0.1, < 4)
       fast_gettext (~> 1.1.2)
       hiera (>= 3.2.1, < 4)
       locale (~> 2.1)
       multi_json (~> 1.10)
-    puppet (5.5.2-universal-darwin)
+    puppet (5.5.3-universal-darwin)
       CFPropertyList (~> 2.2)
       facter (> 2.0.1, < 4)
       fast_gettext (~> 1.1.2)
       hiera (>= 3.2.1, < 4)
       locale (~> 2.1)
       multi_json (~> 1.10)
-    puppet-lint (2.3.5)
+    puppet-lint (2.3.6)
     puppet-syntax (2.4.1)
       rake
     puppet_forge (2.2.9)
@@ -86,7 +86,7 @@ GEM
       puppet-lint (~> 2.0)
       puppet-syntax (~> 2.0)
       rspec-puppet (~> 2.0)
-    r10k (2.6.2)
+    r10k (2.6.3)
       colored (= 1.2)
       cri (~> 2.6.1)
       gettext-setup (~> 0.5)
@@ -94,19 +94,19 @@ GEM
       multi_json (~> 1.10)
       puppet_forge (~> 2.2.8)
     rake (12.3.1)
-    rspec (3.7.0)
-      rspec-core (~> 3.7.0)
-      rspec-expectations (~> 3.7.0)
-      rspec-mocks (~> 3.7.0)
-    rspec-core (3.7.1)
-      rspec-support (~> 3.7.0)
-    rspec-expectations (3.7.0)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
+    rspec-core (3.8.0)
+      rspec-support (~> 3.8.0)
+    rspec-expectations (3.8.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-mocks (3.7.0)
+      rspec-support (~> 3.8.0)
+    rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-puppet (2.6.13)
+      rspec-support (~> 3.8.0)
+    rspec-puppet (2.6.15)
       rspec
     rspec-puppet-utils (3.4.0)
       mocha
@@ -114,7 +114,7 @@ GEM
       puppetlabs_spec_helper
       rspec
       rspec-puppet
-    rspec-support (3.7.1)
+    rspec-support (3.8.0)
     rspec_junit_formatter (0.4.1)
       rspec-core (>= 2, < 4, != 2.12.0)
     semantic_puppet (1.0.2)
@@ -129,6 +129,10 @@ PLATFORMS
 
 DEPENDENCIES
   onceover
+  puppet
+  puppet-lint
+  puppet-syntax
+  rake
 
 BUNDLED WITH
    1.16.2
