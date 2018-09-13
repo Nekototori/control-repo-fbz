@@ -5,15 +5,13 @@ classes:
 # Nodes to tests classes on, this refers to a 'factset' or 'nodeset'
 # depending on weather you are running 'spec' or 'acceptance' tests
 nodes:
-  - CentOS-7.0-64
-
-nodes_off:
   - AIX-6.1-powerpc
   - AIX-7.1-powerpc
   - CentOS-5.11-32
   - CentOS-5.11-64
   - CentOS-6.6-32
   - CentOS-6.6-64
+  - CentOS-7.0-64
   - Debian-6.0.10-32
   - Debian-6.0.10-64
   - Debian-7.8-32
@@ -29,11 +27,25 @@ nodes_off:
   - Windows_Server-2008r2-64
   - Windows_Server-2012r2-64
 
+
 # You can group classes here to save typing
 class_groups:
+  linux_classes:
+    - role::puppet::master
+  windows_classes:
+    - role::windows_generic
+
+node_groups:
+  linux_nodes:
+    - CentOS-7.0-64
+  windows_nodes:
+    - Windows_Server-2012r2-64
 
 test_matrix:
-  - all_nodes:
-      classes: 'all_classes'
-      tests: 'spec'
+  - linux_nodes:
+      classes: linux_classes
+      tests: spec
+  - windows_nodes:
+      classes: windows_classes
+      tests: spec
 

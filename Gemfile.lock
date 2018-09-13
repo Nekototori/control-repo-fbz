@@ -128,11 +128,12 @@ PLATFORMS
   x86_64-darwin-16
 
 DEPENDENCIES
+  facter (= 2.5.1)
   onceover
-  puppet
+  puppet (= 5.5.6)
   puppet-lint
   puppet-syntax
   rake
 
 BUNDLED WITH
-   1.16.2
+   1.16.4
