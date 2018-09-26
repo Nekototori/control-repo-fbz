@@ -6,6 +6,8 @@ class profile::puppet::agent (
   # exclude this class on PE infrastructure servers
   if $server_list and ! $facts['pe_build'] {
 
+    include puppet_agent
+
     if $server_list =~ String[1] {
 
       ini_setting { 'puppet.conf main server_list':

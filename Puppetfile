@@ -25,3 +25,6 @@ mod 'servicenow_cmdb_data',
 
 mod 'jesse-cacert_fingerprint', '0.5.0'
 
+mod 'puppetlabs/puppet_agent', '1.7.0'
+mod 'puppetlabs/stdlib', '5.0.0'
+mod 'puppetlabs/transition', '0.1.1'
