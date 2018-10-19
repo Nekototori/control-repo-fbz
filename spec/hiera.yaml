@@ -9,10 +9,14 @@ hierarchy:
   - name: "Node data"
     path: "nodes/%{trusted.certname}.yaml"
 
+  - name: "Onceover data"
+    path: "spec/data_onceover.yaml"
+
   - name: "ServiceNow CMDB Data"
     data_hash: json_data
     path: "/opt/servicenow_cmdb_data/data/servicenow_cmdb_data.json"
 
   - name: "Common data"
     path: "common.yaml"
+
 
