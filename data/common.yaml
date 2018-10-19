@@ -1,2 +1,6 @@
 ---
 message: "This node is using common data"
+
+profile::puppet::agent::server_list: 'puppet'
+puppet_enterprise::profile::agent::package_inventory_enabled: true
+
