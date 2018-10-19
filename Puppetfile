@@ -23,3 +23,9 @@ mod 'servicenow_cmdb_data',
   :git    => 'https://github.com/jessereynolds/puppet-servicenow_cmdb_data.git',
   :branch => 'master'
 
+mod 'jesse-cacert_fingerprint', '0.5.0'
+
+mod 'puppetlabs/puppet_agent', '1.7.0'
+mod 'puppetlabs/stdlib', '5.0.0'
+mod 'puppetlabs/transition', '0.1.1'
+mod 'puppetlabs/cron_core', '1.0.0'
