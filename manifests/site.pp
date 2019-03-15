@@ -25,6 +25,21 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+# Determine the Puppet Infrastructure we are on based on the CA cert fingerprint
+# To obtain the sha256 ca cert fingerprint on an agent by hand:
+#    openssl x509 -noout -fingerprint -sha256 -inform pem -in /etc/puppetlabs/puppet/ssl/certs/ca.pem
+case $facts['cacert_fingerprint'] {
+  'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa': {
+    $puppet_infra = 'development'
+  }
+  'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb': {
+    $puppet_infra = 'test'
+  }
+  default: {
+    $puppet_infra = 'production'
+  }
+}
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:

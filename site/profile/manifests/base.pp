@@ -1,5 +1,9 @@
+# the base profile should include component modules that will be on all nodes
 class profile::base {
-
-  #the base profile should include component modules that will be on all nodes
-
+  case fact('os.family') {
+    'redhat','debian': {
+      include profile::base_linux
+    }
+    default: {}
+  }
 }
