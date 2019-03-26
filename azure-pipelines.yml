@@ -30,3 +30,11 @@ jobs:
   steps:
   - script: bundle install
   - script: bundle exec onceover run spec
+
+- job: Deploy Dev
+  pool: 
+    name: Default
+  dependsOn: Syntax,Lint,Onceover
+  steps:
+  - script: puppet code deploy --all --wait
+    
