@@ -34,7 +34,10 @@ jobs:
 - job: DeployDev
   pool: 
     name: Default
-  dependsOn: Syntax,Lint,Onceover
+  dependsOn: 
+    - Syntax
+    - Lint
+    - Onceover
   steps:
   - script: puppet code deploy --all --wait
     
