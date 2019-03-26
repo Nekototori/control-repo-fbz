@@ -31,7 +31,7 @@ jobs:
   - script: bundle install
   - script: bundle exec onceover run spec
 
-- job: Deploy Dev
+- job: DeployDev
   pool: 
     name: Default
   dependsOn: Syntax,Lint,Onceover
