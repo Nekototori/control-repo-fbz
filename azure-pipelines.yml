@@ -1,17 +1,32 @@
-# Docker image
-# Build a Docker image to deploy, run, or push to a container registry.
-# Add steps that use Docker Compose, tag images, push to a registry, run an image, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+---
+# TODO: have onceover results published as test results in junit format, if possible
 
-trigger:
-- master
+resources:
+  containers:
+  - container: ruby
+    image: ruby:2.5
 
-pool:
-  vmImage: 'Ubuntu-16.04'
+jobs:
+- job: Syntax
+  pool:
+    vmImage: 'ubuntu-16.04'
+  container: ruby
+  steps:
+  - script: bundle install
+  - script: bundle exec rake syntax
 
-variables:
-  imageName: 'your-container-image-name:$(build.buildId)'
+- job: Lint
+  pool:
+    vmImage: 'ubuntu-16.04'
+  container: ruby
+  steps:
+  - script: bundle install
+  - script: bundle exec rake lint
 
-steps:
-- script: docker build -f Dockerfile -t $(imageName) .
-  displayName: 'docker build'
+- job: Onceover
+  pool:
+    vmImage: 'ubuntu-16.04'
+  container: ruby
+  steps:
+  - script: bundle install
+  - script: bundle exec onceover run spec
