@@ -1,0 +1,32 @@
+---
+# TODO: have onceover results published as test results in junit format
+
+resources:
+  containers:
+  - container: ruby
+    image: ruby:2.5
+
+jobs:
+- job: Syntax
+  pool:
+    vmImage: 'ubuntu-16.04'
+  container: ruby
+  steps:
+  - script: bundle install
+  - script: bundle exec rake syntax
+
+- job: Lint
+  pool:
+    vmImage: 'ubuntu-16.04'
+  container: ruby
+  steps:
+  - script: bundle install
+  - script: bundle exec rake lint
+
+- job: Onceover
+  pool:
+    vmImage: 'ubuntu-16.04'
+  container: ruby
+  steps:
+  - script: bundle install
+  - script: bundle exec onceover run spec
