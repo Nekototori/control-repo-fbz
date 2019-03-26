@@ -1,5 +1,5 @@
 ---
-# TODO: have onceover results published as test results in junit format
+# TODO: have onceover results published as test results in junit format, if possible
 
 resources:
   containers:
