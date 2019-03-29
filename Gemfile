@@ -5,7 +5,7 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "onceover"
-gem "r10k", :git => 'https://github.com/jessereynolds/r10k-gem.git', :branch => 'no_symlinks'
+gem "r10k", :git => 'https://github.com/puppetlabs/r10k.git', :ref => '8db6cd38a4b28e8fc2ded38e9665715192b46169'
 gem "puppet-lint"
 gem "rake"
 gem "puppet"

@@ -4,11 +4,15 @@ See the [Original-Readme](Original-Readme.md) for background and heritage of thi
 
 ## Testing
 
-Half the reason for this control-repo existing is to demonstrate various ways to test it.
+The main reason for this control-repo existing is to demonstrate various ways to test it. The tests are set up to be executed on the following CI/CD systems:
+
+* [GitLab](https://gitlab.com/jessereynolds/control-repo-fbz/pipelines) - from the [GitLab repo](https://gitlab.com/jessereynolds/control-repo-fbz/tree/production)
+* [Travis CI](https://travis-ci.com/jessereynolds/control-repo-fbz) - from the [GitHub repo](https://github.com/jessereynolds/control-repo-fbz)
+* [Azure DevOps](https://dev.azure.com/jessereynolds/control-repo-fbz/_build) - from the [Azure DevOps repo](https://dev.azure.com/jessereynolds/_git/control-repo-fbz)
 
 ### Preparing
 
-Install Ruby 2.4.4 or thereabouts using rbenv.
+Install Ruby 2.5.x or thereabouts using rbenv.
 
 Install the bundler gem with `gem install bundler`
 
@@ -36,7 +40,7 @@ bundle exec rake syntax
 bundle exec rake lint
 ```
 
-### Catalog Compile for all Roles
+### Onceover Test - Catalog Compile for all Roles
 
 ```
 bundle exec onceover run spec
