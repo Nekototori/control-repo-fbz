@@ -25,7 +25,7 @@ mod 'servicenow_cmdb_data',
 
 #mod 'jesse-cacert_fingerprint', '0.5.0'
 mod 'jesse-cacert_fingerprint',
-  :git => 'https://jessereynolds:qgm2ccmysid52a73ghm6kdkfx2rbc3dp2obhivmbjgjm3qqod72a@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module',
+  :git => 'https://jessereynolds:jqgm2ccmysid52a73ghm6kdkfx2rbc3dp2obhivmbjgjm3qqod72a@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module',
   :tag => '0.5.0'
 
 mod 'puppetlabs/puppet_agent', '1.7.0'
