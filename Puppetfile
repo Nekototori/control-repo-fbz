@@ -28,7 +28,7 @@ mod 'servicenow_cmdb_data',
 #mod 'jesse-cacert_fingerprint', '0.5.0'
 mod 'jesse-cacert_fingerprint',
   :git => "https://#{token_auth}@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module",
-  :branch => 'test_branch'
+  :branch => 'test_branch_2'
 
 mod 'puppetlabs/puppet_agent', '1.7.0'
 mod 'puppetlabs/stdlib', '5.0.0'
