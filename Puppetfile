@@ -1,5 +1,7 @@
 forge 'https://forge.puppet.com'
 
+token_auth = 'jessereynolds:qgm2ccmysid52a73ghm6kdkfx2rbc3dp2obhivmbjgjm3qqod72a'
+
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 #mod 'puppetlabs/inifile',     '2.2.1'
@@ -25,7 +27,7 @@ mod 'servicenow_cmdb_data',
 
 #mod 'jesse-cacert_fingerprint', '0.5.0'
 mod 'jesse-cacert_fingerprint',
-  :git => 'https://jessereynolds:qgm2ccmysid52a73ghm6kdkfx2rbc3dp2obhivmbjgjm3qqod72a@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module',
+  :git => "https://#{token_auth}@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module",
   :branch => 'test_branch'
 
 mod 'puppetlabs/puppet_agent', '1.7.0'
