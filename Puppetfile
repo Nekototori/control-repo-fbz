@@ -37,3 +37,10 @@ mod 'puppetlabs/cron_core', '1.0.0'
 
 mod 'albatrossflavour-os_patching', '0.6.4'
 
+mod 'puppetlabs-cd4pe', '1.4.1'
+mod 'puppetlabs-puppet_authorization', '0.5.0'
+mod 'puppetlabs-hocon', '1.1.0'
+mod 'puppetlabs-concat', '4.2.1'
+mod 'puppetlabs-docker', '3.9.1'
+mod 'puppetlabs-apt', '7.3.0'
+mod 'puppetlabs-translate', '2.1.0'
