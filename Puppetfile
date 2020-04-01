@@ -32,7 +32,7 @@ mod 'jesse-cacert_fingerprint',
 
 #mod 'puppetlabs-puppet_agent', '3.0.2'
 mod 'puppetlabs-puppet_agent',
-  :git => 'git@github.com:jessereynolds/puppetlabs-puppet_agent.git',
+  :git => 'https://github.com/jessereynolds/puppetlabs-puppet_agent.git',
   :branch => 'master'
 
 mod 'puppetlabs-stdlib', '6.2.0'
