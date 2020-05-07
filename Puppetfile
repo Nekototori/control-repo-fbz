@@ -53,3 +53,6 @@ mod 'puppetlabs-concat', '4.2.1'
 mod 'puppetlabs-docker', '3.9.1'
 
 mod 'puppetlabs-translate', '2.2.0'
+
+mod 'puppet-gitlab', '5.0.0'
+
