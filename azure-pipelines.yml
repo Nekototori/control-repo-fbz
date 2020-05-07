@@ -29,10 +29,10 @@ jobs:
   container: ruby
   steps:
   - script: bundle install
-  - script: bundle exec onceover run spec
+  - script: LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec onceover run spec
 
 - job: DeployDev
-  pool: 
+  pool:
     name: Default
   dependsOn:
     - Syntax
@@ -40,4 +40,4 @@ jobs:
     - Onceover
   steps:
   - script: /opt/puppetlabs/bin/puppet-code deploy $(Build.SourceBranchName) --wait
-    
+
