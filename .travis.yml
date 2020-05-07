@@ -6,5 +6,5 @@ install:
 script:
   - bundle exec rake syntax
   - bundle exec rake lint
-  - bundle exec onceover run spec
+  - LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec onceover run spec
 
