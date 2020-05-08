@@ -6,4 +6,26 @@ puppet_enterprise::profile::agent::package_inventory_enabled: true
 
 profile::gitlab::external_url: http://jesse-gitlab.p9.puppet.net
 
+gitlab_ci_runner::concurrent: 8
+gitlab_ci_runner::manage_docker: true
+#gitlab_ci_runner::config_path: "etc/gitlab-runner/config.toml"
+
+gitlab_ci_runner::runners:
+  runner1:{}
+  runner2:{}
+  runner3:{}
+  runner4:{}
+  runner5:{}
+  runner6:{}
+  runner7:{}
+  runner8:{}
+
+gitlab_ci_runner::runner_defaults:
+  url: "http://jesse-gitlab.p9.puppet.net/"
+  registration-token: "izXch8c6uUHpa89ge6qA"
+  executor: "docker"
+  docker-image: "ubuntu:bionic"
+  builds_dir: "/tmp"
+  cache_dir: "/tmp"
+  tags-list: "docker"
 

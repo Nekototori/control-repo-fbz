@@ -56,4 +56,5 @@ mod 'puppetlabs-yumrepo_core', '1.0.7'
 mod 'puppetlabs-translate', '2.2.0'
 
 mod 'puppet-gitlab', '5.0.0'
+mod 'puppet-gitlab_ci_runner', '2.1.0'
 
