@@ -50,7 +50,8 @@ mod 'puppetlabs-cd4pe', '1.4.1'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
 mod 'puppetlabs-hocon', '1.1.0'
 mod 'puppetlabs-concat', '4.2.1'
-mod 'puppetlabs-docker', '3.9.1'
+mod 'puppetlabs-docker', '3.10.0'
+mod 'puppetlabs-yumrepo_core', '1.0.7'
 
 mod 'puppetlabs-translate', '2.2.0'
 
