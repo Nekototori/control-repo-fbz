@@ -11,14 +11,14 @@ gitlab_ci_runner::manage_docker: true
 #gitlab_ci_runner::config_path: "etc/gitlab-runner/config.toml"
 
 gitlab_ci_runner::runners:
-  runner1:{}
-  runner2:{}
-  runner3:{}
-  runner4:{}
-  runner5:{}
-  runner6:{}
-  runner7:{}
-  runner8:{}
+  runner1: {}
+  runner2: {}
+  runner3: {}
+  runner4: {}
+  runner5: {}
+  runner6: {}
+  runner7: {}
+  runner8: {}
 
 gitlab_ci_runner::runner_defaults:
   url: "http://jesse-gitlab.p9.puppet.net/"
