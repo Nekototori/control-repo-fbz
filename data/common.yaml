@@ -27,5 +27,5 @@ gitlab_ci_runner::runner_defaults:
   docker-image: "ubuntu:bionic"
   builds_dir: "/tmp"
   cache_dir: "/tmp"
-  tags-list: "docker"
+  tag-list: "docker"
 
