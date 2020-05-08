@@ -30,10 +30,10 @@ mod 'jesse-cacert_fingerprint',
   :git => "https://#{token_auth}@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module",
   :branch => 'test_branch_2'
 
-#mod 'puppetlabs-puppet_agent', '3.0.2'
-mod 'puppetlabs-puppet_agent',
-  :git => 'https://github.com/jessereynolds/puppetlabs-puppet_agent.git',
-  :branch => 'master'
+mod 'puppetlabs-puppet_agent', '3.0.2'
+#mod 'puppetlabs-puppet_agent',
+#  :git => 'https://github.com/jessereynolds/puppetlabs-puppet_agent.git',
+#  :branch => 'master'
 
 mod 'puppetlabs-stdlib', '6.2.0'
 mod 'puppetlabs-inifile', '4.0.0'
@@ -56,5 +56,8 @@ mod 'puppetlabs-yumrepo_core', '1.0.7'
 mod 'puppetlabs-translate', '2.2.0'
 
 mod 'puppet-gitlab', '5.0.0'
-mod 'puppet-gitlab_ci_runner', '2.1.0'
+#mod 'puppet-gitlab_ci_runner', '2.1.0'
+mod 'puppet-gitlab_ci_runner',
+  :git => 'https://github.com/voxpupuli/puppet-gitlab_ci_runner.git',
+  :branch => 'master'
 
