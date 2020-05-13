@@ -25,4 +25,6 @@ gitlab_ci_runner::runner_defaults:
   builds_dir: "/tmp"
   cache_dir: "/tmp"
   tag-list: "docker"
+  docker:
+    pull_policy: if-not-present
 
