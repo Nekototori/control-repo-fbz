@@ -61,3 +61,11 @@ mod 'puppet-gitlab_ci_runner',
   :git => 'https://github.com/voxpupuli/puppet-gitlab_ci_runner.git',
   :branch => 'master'
 
+mod 'puppetlabs-vcsrepo', '3.1.0'
+mod 'puppet-letsencrypt', '5.0.0'
+mod 'camptocamp-postfix', '1.10.0'
+mod 'camptocamp-augeas', '1.9.0'
+mod 'puppetlabs-augeas_core', '1.0.5'
+mod 'puppet-alternatives', '3.0.0'
+mod 'puppetlabs-mailalias_core', '1.0.6'
+
