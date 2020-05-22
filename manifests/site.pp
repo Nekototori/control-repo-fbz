@@ -40,6 +40,8 @@ case $facts['cacert_fingerprint'] {
   }
 }
 
+notify { "message from hiera: ${lookup('message')}": }
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
