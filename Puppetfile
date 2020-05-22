@@ -61,3 +61,5 @@ mod 'puppet-gitlab_ci_runner',
   :git => 'https://github.com/voxpupuli/puppet-gitlab_ci_runner.git',
   :branch => 'master'
 
+mod 'maxadamo-hiera_redis', '0.3.0'
+
