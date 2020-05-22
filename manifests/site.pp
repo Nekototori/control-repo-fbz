@@ -47,6 +47,10 @@ $keys.each |String $key| {
   notify { "${key} from hiera: ${type($value)} ${value}": }
 }
 
+$array_as_json = lookup('array_as_json')
+$array_parsed = parsejson($array_as_json, undef)
+notify { "array_as_json parsed: ${type($array_parsed)} ${array_parsed}": }
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
