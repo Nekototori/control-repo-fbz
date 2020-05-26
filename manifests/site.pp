@@ -51,6 +51,12 @@ $array_as_json = lookup('array_as_json')
 $array_parsed = parsejson($array_as_json, undef)
 notify { "array_as_json parsed: ${type($array_parsed)} ${array_parsed}": }
 
+$alias_somestring = lookup('alias_somestring')
+notify { "alias_somestring: ${type($alias_somestring)} ${alias_somestring}": }
+
+$alias_missingstring = lookup('alias_missingstring')
+notify { "alias_missingstring: ${type($alias_missingstring)} ${alias_missingstring}": }
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
