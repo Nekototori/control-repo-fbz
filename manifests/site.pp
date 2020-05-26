@@ -40,7 +40,7 @@ case $facts['cacert_fingerprint'] {
   }
 }
 
-notify { "message from hiera: ${lookup('message')}": }
+notify { "message from hiera: ${lookup('message', {'default_value' => undef)}": }
 $keys = ['boolean_as_string', 'array_as_json', 'hash_as_json', 'user_hash', 'list_of_strings']
 $keys.each |String $key| {
   $value = lookup($key)
