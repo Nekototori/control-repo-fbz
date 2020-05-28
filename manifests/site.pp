@@ -40,26 +40,26 @@ case $facts['cacert_fingerprint'] {
   }
 }
 
-notify { "message from hiera: ${lookup('message', {'default_value' => undef})}": }
+# notify { "message from hiera: ${lookup('message', {'default_value' => undef})}": }
 
-$keys = ['boolean_as_string', 'array_as_json', 'hash_as_json', 'user_hash', 'list_of_strings']
-$keys.each |String $key| {
-  $value = lookup($key)
-  notify { "${key} from hiera: ${type($value)} ${value}": }
-}
+# $keys = ['boolean_as_string', 'array_as_json', 'hash_as_json', 'user_hash', 'list_of_strings']
+# $keys.each |String $key| {
+#   $value = lookup($key)
+#   notify { "${key} from hiera: ${type($value)} ${value}": }
+# }
 
-$array_as_json = lookup('array_as_json')
-$array_parsed = parsejson($array_as_json, undef)
-notify { "array_as_json parsed: ${type($array_parsed)} ${array_parsed}": }
+# $array_as_json = lookup('array_as_json')
+# $array_parsed = parsejson($array_as_json, undef)
+# notify { "array_as_json parsed: ${type($array_parsed)} ${array_parsed}": }
 
-$alias_somestring = lookup('alias_somestring')
-notify { "alias_somestring: ${type($alias_somestring)} ${alias_somestring}": }
+# $alias_somestring = lookup('alias_somestring')
+# notify { "alias_somestring: ${type($alias_somestring)} ${alias_somestring}": }
 
-$alias_missingstring = lookup('alias_missingstring')
-notify { "alias_missingstring: ${type($alias_missingstring)} ${alias_missingstring}": }
+# $alias_missingstring = lookup('alias_missingstring')
+# notify { "alias_missingstring: ${type($alias_missingstring)} ${alias_missingstring}": }
 
-$missingkey = lookup('missingkey')
-notify { "missingkey: ${type($missingkey)} ${missingkey}": }
+# $missingkey = lookup('missingkey')
+# notify { "missingkey: ${type($missingkey)} ${missingkey}": }
 
 node default {
   # This is where you can declare classes for all nodes.
