@@ -30,7 +30,7 @@ mod 'jesse-cacert_fingerprint',
   :git => "https://#{token_auth}@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module",
   :branch => 'test_branch_2'
 
-mod 'puppetlabs-puppet_agent', '3.0.2'
+mod 'puppetlabs-puppet_agent', '3.2.0'
 #mod 'puppetlabs-puppet_agent',
 #  :git => 'https://github.com/jessereynolds/puppetlabs-puppet_agent.git',
 #  :branch => 'master'
