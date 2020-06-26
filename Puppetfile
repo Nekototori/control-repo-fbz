@@ -67,3 +67,5 @@ mod 'puppet-gitlab_ci_runner',
 
 mod 'maxadamo-hiera_redis', '0.3.0'
 
+mod 'puppetlabs-vcsrepo', '3.1.0'
+
