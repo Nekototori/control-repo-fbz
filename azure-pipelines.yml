@@ -31,13 +31,13 @@ jobs:
   - script: bundle install
   - script: LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec onceover run spec
 
-- job: DeployDev
-  pool:
-    name: Default
-  dependsOn:
-    - Syntax
-    - Lint
-    - Onceover
-  steps:
-  - script: /opt/puppetlabs/bin/puppet-code deploy $(Build.SourceBranchName) --wait
+#- job: DeployDev
+#  pool:
+#    name: Default
+#  dependsOn:
+#    - Syntax
+#    - Lint
+#    - Onceover
+#  steps:
+#  - script: /opt/puppetlabs/bin/puppet-code deploy $(Build.SourceBranchName) --wait
 
