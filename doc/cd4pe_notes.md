@@ -22,6 +22,7 @@ Questions:
 
 Docs issues
 
-- is not clear that you need to do this within a workspace - the github etc integrations when you log in as root are just for SAML auth
+- is not clear that you need to do this within a workspace - the github etc integrations when you log in as root are just for OAuth auth
+- granting access to all my organisations in github seems excessive (via the OAuth app)
 
 

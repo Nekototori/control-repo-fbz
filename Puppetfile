@@ -51,6 +51,7 @@ mod 'puppetlabs-scheduled_task', '2.0.1'
 mod 'puppet-cron', '2.0.0'
 
 mod 'puppetlabs-cd4pe', '1.4.1'
+mod 'puppetlabs-cd4pe_jobs', '1.2.1'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
 mod 'puppetlabs-hocon', '1.1.0'
 mod 'puppetlabs-concat', '4.2.1'
