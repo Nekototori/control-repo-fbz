@@ -1,6 +1,6 @@
 # A puppet control-repo
 
-See the [Original-Readme](Original-Readme.md) for background and heritage of this repo.
+See the [Original-Readme](Original-Readme.md) for background and heritage of this repo. 
 
 ## Testing
 
