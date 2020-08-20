@@ -1,6 +1,6 @@
 forge 'https://forge.puppet.com'
 
-token_auth = 'jessereynolds:qgm2ccmysid52a73ghm6kdkfx2rbc3dp2obhivmbjgjm3qqod72a'
+#token_auth = 'jessereynolds:ykj5m5wecdixnxnwwoacnbrdfikckvix6p2pzawffegj2g2fkcla'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
@@ -25,10 +25,11 @@ mod 'jesse-servicenow_cmdb_data',
   :git    => 'https://github.com/jessereynolds/puppet-servicenow_cmdb_data.git',
   :branch => 'master'
 
-#mod 'jesse-cacert_fingerprint', '0.5.0'
-mod 'jesse-cacert_fingerprint',
-  :git => "https://#{token_auth}@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module",
-  :branch => 'test_branch_2'
+mod 'jesse-cacert_fingerprint'
+
+#mod 'jesse-test_module',
+#  :git => "https://#{token_auth}@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module",
+#  :branch => 'test_branch_2'
 
 #mod 'puppetlabs-puppet_agent',
 #  :git => 'https://github.com/jessereynolds/puppetlabs-puppet_agent.git',
@@ -37,7 +38,7 @@ mod 'jesse-cacert_fingerprint',
 #mod 'jesse-pe_nc_backup', '1.0.0'
 mod 'jesse-pe_nc_backup',
   :git => 'https://github.com/jessereynolds/puppet-pe_nc_backup.git',
-  :branch => 'main'
+  :branch => 'fix_ssl_dir'
 
 mod 'puppetlabs-stdlib', '6.2.0'
 mod 'puppetlabs-inifile', '4.0.0'

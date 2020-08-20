@@ -87,3 +87,12 @@ All tests pass first time, so the docker "job hardware" is working correctly.
 2020-07-02 11:13:41 UTC: Bolt command executed: bolt plan run cd4pe_deployments::cd4pe_job --configfile /disk/8648343270172819074/bolt.yaml --format json --transport pcp --params {"cd4pe_job_owner":"fbz","cd4pe_web_ui_endpoint":"http://pe-201814-agent.puppetdebug.vlan:8080/","job_instance_id":"2","targets":["pe-201814-agent-3.puppetdebug.vlan"],"docker_image":"puppet/puppet-dev-tools:latest"}
 ```
 
+## Getting started docs - first pipeline execution
+
+Gets you to set up the default pipeline. Says about this:
+
+  When triggered by your commit, the pipeline automatically runs tests on your code, skips over the impact analysis stage that we haven't yet set up, and stops, as the pipeline is set up not to autopromote into the Deployment stage.
+
+However, it doesn't skip over the impact analysis stage, it fails there. 
+
+
