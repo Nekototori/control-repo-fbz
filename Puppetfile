@@ -34,10 +34,10 @@ mod 'jesse-cacert_fingerprint',
 #  :git => 'https://github.com/jessereynolds/puppetlabs-puppet_agent.git',
 #  :branch => 'master'
 
-mod 'jesse-pe_nc_backup', '1.0.0'
-#mod 'jesse-pe_nc_backup',
-#  :git => 'https://github.com/jessereynolds/puppet-pe_nc_backup.git',
-#  :branch => 'full_paths_to_keys'
+#mod 'jesse-pe_nc_backup', '1.0.0'
+mod 'jesse-pe_nc_backup',
+  :git => 'https://github.com/jessereynolds/puppet-pe_nc_backup.git',
+  :branch => 'main'
 
 mod 'puppetlabs-stdlib', '6.2.0'
 mod 'puppetlabs-inifile', '4.0.0'
@@ -70,3 +70,9 @@ mod 'maxadamo-hiera_redis', '0.3.0'
 
 mod 'puppetlabs-vcsrepo', '3.1.0'
 
+mod 'puppetlabs-puppet_metrics_collector', '6.1.0'
+mod 'puppetlabs-puppet_metrics_dashboard', '2.3.0'
+mod 'puppet-grafana', '6.1.0'
+mod 'puppet-archive', '4.5.0'
+mod 'puppet-telegraf', '3.0.0'
+mod 'puppetlabs-puppetserver_gem', '1.1.1'
