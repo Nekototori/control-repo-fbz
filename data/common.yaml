@@ -1,5 +1,15 @@
 ---
+lookup_options:
+  profile::test_agent::config:
+    merge: hash
+
 message: "This node is using common data"
+
+profile::test_agent::config:
+  option_1: false
+  option_2: public
+  option_3: foo
+  
 
 profile::puppet::agent::server_list: 'puppet'
 puppet_enterprise::profile::agent::package_inventory_enabled: true
@@ -28,8 +38,3 @@ gitlab_ci_runner::runner_defaults:
   docker:
     pull_policy: if-not-present
 
-profile::test_agent::config:
-  option_1: false
-  option_2: public
-  option_3: foo
-  
