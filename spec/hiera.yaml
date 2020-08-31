@@ -2,12 +2,12 @@
 version: 5
 
 defaults:
-  datadir: data
+  datadir: ../data/
+  data_hash: yaml_data
 
 hierarchy:
   - name: "Node data"
     path: "nodes/%{trusted.certname}.yaml"
-    data_hash: yaml_data
 
   - name: "ServiceNow CMDB Data"
     data_hash: json_data
@@ -15,5 +15,3 @@ hierarchy:
 
   - name: "Common data"
     path: "common.yaml"
-    data_hash: yaml_data
-
