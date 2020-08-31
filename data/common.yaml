@@ -28,3 +28,8 @@ gitlab_ci_runner::runner_defaults:
   docker:
     pull_policy: if-not-present
 
+profile::test_agent::config:
+  option_1: false
+  option_2: public
+  option_3: foo
+  
