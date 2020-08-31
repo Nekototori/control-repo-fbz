@@ -7,6 +7,5 @@ alias_missingstring: "%{alias('missingstring')}"
 
 profile::test_agent::config:
     option_1: true
-    # option_2: public
     option_3: bar
     
