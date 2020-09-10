@@ -77,3 +77,10 @@ mod 'puppet-archive', '4.5.0'
 mod 'puppet-telegraf', '3.0.0'
 mod 'puppetlabs-puppetserver_gem', '1.1.1'
 
+mod 'puppet-letsencrypt', '5.0.0'
+mod 'camptocamp-postfix', '1.10.0'
+mod 'camptocamp-augeas', '1.9.0'
+mod 'puppetlabs-augeas_core', '1.0.5'
+mod 'puppet-alternatives', '3.0.0'
+mod 'puppetlabs-mailalias_core', '1.0.6'
+
