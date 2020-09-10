@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    CFPropertyList (2.3.6)
     backticks (1.0.2)
     blockenspiel (0.5.0)
     colored (1.2)
@@ -11,8 +10,6 @@ GEM
     deep_merge (1.2.1)
     diff-lcs (1.4.4)
     facter (2.5.7)
-    facter (2.5.7-universal-darwin)
-      CFPropertyList (~> 2.2)
     faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.14.0)
@@ -60,22 +57,10 @@ GEM
       terminal-table (>= 1.8.0)
       versionomy (>= 0.5.0)
     parallel (1.19.2)
-    parallel_tests (3.1.0)
+    parallel_tests (3.2.0)
       parallel
     pathspec (0.2.1)
-    puppet (6.17.0)
-      concurrent-ruby (~> 1.0)
-      deep_merge (~> 1.0)
-      facter (> 2.0.1, < 5)
-      fast_gettext (~> 1.1)
-      hiera (>= 3.2.1, < 4)
-      httpclient (~> 2.8)
-      locale (~> 2.1)
-      multi_json (~> 1.10)
-      puppet-resource_api (~> 1.5)
-      semantic_puppet (~> 1.0)
-    puppet (6.17.0-universal-darwin)
-      CFPropertyList (~> 2.2)
+    puppet (6.18.0)
       concurrent-ruby (~> 1.0)
       deep_merge (~> 1.0)
       facter (> 2.0.1, < 5)
@@ -142,7 +127,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86_64-darwin-16
 
 DEPENDENCIES
   onceover
@@ -152,4 +136,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   1.17.2
+   2.1.4
