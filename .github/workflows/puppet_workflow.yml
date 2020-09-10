@@ -12,7 +12,7 @@
     jobs:
     
       syntax_lint_onceover:
-        name: Check Syntax and Lint
+        name: Check Syntax, Lint and Onceover
         runs-on: ubuntu-latest
     
         steps:
