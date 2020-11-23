@@ -22,7 +22,7 @@ mod 'jesse-servicenow_cmdb_data',
   :git    => 'https://github.com/jessereynolds/puppet-servicenow_cmdb_data.git',
   :branch => 'master'
 
-mod 'jesse-cacert_fingerprint'
+mod 'jesse-cacert_fingerprint', '0.5.0'
 
 #mod 'jesse-test_module',
 #  :git => "https://#{token_auth}@dev.azure.com/jessereynolds/control-repo-fbz/_git/test_module",
@@ -35,7 +35,7 @@ mod 'jesse-cacert_fingerprint'
 #mod 'jesse-pe_nc_backup', '1.0.0'
 mod 'jesse-pe_nc_backup',
   :git => 'https://github.com/jessereynolds/puppet-pe_nc_backup.git',
-  :branch => 'main'
+  :branch => 'verbosity'
 
 mod 'puppetlabs-stdlib', '6.3.0'
 mod 'puppetlabs-inifile', '4.2.0'
@@ -84,3 +84,4 @@ mod 'puppetlabs-augeas_core', '1.0.5'
 mod 'puppet-alternatives', '3.0.0'
 mod 'puppetlabs-mailalias_core', '1.0.6'
 
+mod 'puppetlabs-wsus_client', '3.1.0'
