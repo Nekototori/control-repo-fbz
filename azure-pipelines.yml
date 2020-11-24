@@ -4,7 +4,7 @@
 resources:
   containers:
   - container: ruby
-    image: ruby:2.5
+    image: ruby:2.7
 
 jobs:
 - job: Syntax
