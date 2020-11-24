@@ -1,4 +1,7 @@
 ---
+language: ruby
+rvm:
+ - 2.7
 
 install:
   - bundle install
@@ -7,4 +10,3 @@ script:
   - bundle exec rake syntax
   - bundle exec rake lint
   - LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec onceover run spec
-
