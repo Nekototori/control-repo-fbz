@@ -35,7 +35,7 @@ mod 'jesse-cacert_fingerprint', '0.5.0'
 #mod 'jesse-pe_nc_backup', '1.0.0'
 mod 'jesse-pe_nc_backup',
   :git => 'https://github.com/jessereynolds/puppet-pe_nc_backup.git',
-  :branch => 'cron_interval'
+  :branch => 'main'
 
 mod 'puppetlabs-stdlib', '6.3.0'
 mod 'puppetlabs-inifile', '4.2.0'
