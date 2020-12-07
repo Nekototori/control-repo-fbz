@@ -1,3 +1,5 @@
-plan planable::wait_on_task () {
-  run_task("planable::sleep")
+plan planable::wait_on_task (
+  TargetSpec $targets,
+) {
+  run_task("planable::sleep", get_targets($targets))
 }
