@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../modules/puppet-enterprise-modules"
+		},
+		{
+			"name": "pe_patch",
+			"path": "../modules/pe_patch"
+		},
+		{
+			"name": "puppetlabs-reboot",
+			"path": "../modules/puppetlabs-reboot"
+		}
+	],
+	"settings": {}
+}
