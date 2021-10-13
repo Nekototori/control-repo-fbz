@@ -4,6 +4,7 @@ class profile::postgresql_dev () {
     version             => '12',
   }
   class { 'postgresql::server':
+    postgres_password => 'fancydancy',
   }
 
 }
