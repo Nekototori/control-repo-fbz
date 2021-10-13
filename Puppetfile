@@ -85,3 +85,5 @@ mod 'puppet-alternatives', '3.0.0'
 mod 'puppetlabs-mailalias_core', '1.0.6'
 
 mod 'puppetlabs-wsus_client', '3.1.0'
+
+mod 'puppetlabs-postgresql', '7.5.0'
