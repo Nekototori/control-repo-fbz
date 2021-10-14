@@ -68,8 +68,8 @@ mod 'puppet-gitlab_ci_runner',
 
 mod 'jessereynolds-scb_postgresql_ura',
   :git => 'git@github.com:jessereynolds/scb_postgresql_ura.git',
-  :branch => 'postgres_update'
-  # :tag => '0.1.4'
+  # :branch => 'postgres_update'
+  :tag => '0.1.4'
 mod 'dylanratcliffe-facter_cache', '1.3.1'
 
 mod 'maxadamo-hiera_redis', '0.3.0'
