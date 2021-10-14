@@ -7,4 +7,11 @@ class profile::postgresql_dev () {
     postgres_password => 'fancydancy',
   }
 
+  postgresql::server::role { 'super2':
+    password_hash    => 'foobar2',
+    superuser        => true,
+
+    connect_settings => {},
+  }
+
 }
