@@ -6,6 +6,7 @@ class profile::postgresql_dev () {
   class { 'postgresql::server':
     postgres_password => 'fancydancy',
   }
+  include postgresql::client
 
   postgresql::server::role { 'super2':
     password_hash    => 'foobar2',
