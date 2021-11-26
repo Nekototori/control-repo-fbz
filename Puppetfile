@@ -66,12 +66,12 @@ mod 'puppet-gitlab_ci_runner',
   :git => 'https://github.com/voxpupuli/puppet-gitlab_ci_runner.git',
   :branch => 'master'
 
-mod 'jessereynolds-scb_postgresql_ura',
+mod 'scb_postgresql_ura',
   :git => 'git@github.com:jessereynolds/scb_postgresql_ura.git',
   :branch => 'main'
 
-mod 'sooyeanhoo-scb_mongo_ura',
-  :git => 'git@github.com:sooyean-hoo/scb_mongo_ura.git',
+mod 'scb_mongo_ura',
+  :git => 'git@github.com:jessereynolds/scb_mongo_ura.git',
   :branch => 'main'
 
 mod 'puppet-mongodb', '4.1.0'
