@@ -70,7 +70,7 @@ mod 'jessereynolds-scb_postgresql_ura',
   :git => 'git@github.com:jessereynolds/scb_postgresql_ura.git',
   :branch => 'main'
 
-mod 'sooyean-hoo/scb_mongo_ura',
+mod 'sooyeanhoo-scb_mongo_ura',
   :git => 'git@github.com:sooyean-hoo/scb_mongo_ura.git',
   :branch => 'main'
 
