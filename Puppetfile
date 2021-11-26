@@ -69,6 +69,14 @@ mod 'puppet-gitlab_ci_runner',
 mod 'jessereynolds-scb_postgresql_ura',
   :git => 'git@github.com:jessereynolds/scb_postgresql_ura.git',
   :branch => 'main'
+
+mod 'sooyean-hoo/scb_mongo_ura',
+  :git => 'git@github.com:sooyean-hoo/scb_mongo_ura.git',
+  :branch => 'main'
+
+mod 'puppet-mongodb', '4.1.0'
+mod 'puppet-systemd', '3.5.1'
+
 mod 'dylanratcliffe-facter_cache', '1.3.1'
 
 mod 'maxadamo-hiera_redis', '0.3.0'
