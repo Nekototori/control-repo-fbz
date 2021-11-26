@@ -1,7 +1,9 @@
 #
 class profile::mongodb_server () {
   class { 'mongodb::server':
-    auth => true,
+    create_admin   => true,
+    admin_username => 'admin',
+    admin_password => 'secret123',
   }
 
   mongodb::db { 'testdb':
